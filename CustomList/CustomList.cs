@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CustomListProj    
 {
-    public class CustomList
+    public class CustomList<T>
     {
+        private T[] items = new T[4];
     }
 }
