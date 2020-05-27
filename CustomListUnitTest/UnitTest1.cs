@@ -8,32 +8,34 @@ namespace CustomListUnitTest
     public class AddToListUnitTesting
     {
         [TestMethod]
-        public void TestMethod1()
+        public void AddMethod_PositiveNumberinFirstIndex_ReturnPositiveNumer()
         {
             //Arrange
-            CustomList<T> ourList = new CustomList<T>;
+            CustomList<int> ourList = new CustomList<int>;
             int expected = 2;
+            int actual;
 
             //Act
             ourList.Add(2);
-            int actual = ourList[0];
+            actual = ourList[0];
 
             //Assert
             Assert.AreEqual(actual, expected);
         }
 
         [TestMethod]
-        public void TestMethod2()
+        public void AddMethod_PositiveNumberInLastIndex_ReturnPositiveNumber()
         {
             //Arrange
-            CustomList<T> ourList = new CustomList<T>;
+            CustomList<int> ourList = new CustomList<int>;
             int expected = 6;
+            int actual;
 
             //Act
             ourList.Add(2);
             ourList.Add(4);
             ourList.Add(6);
-            int actual = ourList[2];
+            actual = ourList[2];
 
             //Assert
             Assert.AreEqual(actual, expected);
@@ -41,26 +43,31 @@ namespace CustomListUnitTest
 
         [TestMethod]
 
-        public void TestMethod3()
+        public void AddNumber_PositiveNumberinListCount_ReturnPositiveNumber()
         {
             //Arrange
-            CustomList<T> ourList = new CustomList<T>;
+            CustomList<int> ourList = new CustomList<int>;
             int expected = 3;
+            int actual;
 
             //Act
-            int actual = ourList.Count;
+            ourList.Add(2);
+            ourList.Add(4);
+            ourList.Add(6);
+            actual = ourList.Count;
 
             //Assert
-            Asset.AreEqual(actual, expected);
+            Assert.AreEqual(actual, expected);
         }
 
         [TestMethod]
 
-        public void TestMethod4()
+        public void AddNumber_TestLastIndex_ReturnPositiveNumber()
         {
             //Arrange
-            CustomList<T> ourList = new CustomList<T>;
-            int expected = 0;
+            CustomList<int> ourList = new CustomList<int>;
+            int expected = 12;
+            int actual;
 
             //Act
             ourList.Add(2);
@@ -70,7 +77,7 @@ namespace CustomListUnitTest
             ourList.Add(10);
             ourList.Add(12);
 
-            int actual = ourList[6]
+            actual = ourList[5]
 
             //Assert
             Assert.AreEqual(actual, expected);
@@ -79,11 +86,12 @@ namespace CustomListUnitTest
 
         [TestMethod]
 
-        public void TestMethod5()
+        public void AddMethod_PositiveNumnerinListCount_ReturnPositiveNumber()
         {
             //Arrange
-            CustomList<T> ourList = new CustomList<T>;
+            CustomList<int> ourList = new CustomList<int>;
             int expected = 6;
+            int actual;
 
             //Act
             ourList.Add(2);
@@ -93,7 +101,7 @@ namespace CustomListUnitTest
             ourList.Add(10);
             ourList.Add(12);
 
-            int actual = ourList.Count
+            actual = ourList.Count
 
 
 
