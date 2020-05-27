@@ -8,6 +8,14 @@ namespace CustomListProj
 {
     public class CustomList<T>
     {
-        private T[] items = new T[4];
+        private T[] ourList;
+
+        public CustomList()
+        {
+            ourList = new T[4];
+        }
+
     }
+
+       
 }
