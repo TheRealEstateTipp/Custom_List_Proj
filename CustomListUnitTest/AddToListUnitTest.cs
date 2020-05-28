@@ -5,13 +5,13 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CustomListUnitTest
 {
     [TestClass]
-    public class AddToListUnitTesting
+    public class AddToListUnitTest
     {
         [TestMethod]
         public void AddMethod_PositiveNumberinFirstIndex_ReturnPositiveNumer()
         {
             //Arrange
-            CustomList<int> ourList = new CustomList<int>;
+            CustomList<int> ourList = new CustomList<int>();
             int expected = 2;
             int actual;
 
@@ -27,7 +27,7 @@ namespace CustomListUnitTest
         public void AddMethod_PositiveNumberInLastIndex_ReturnPositiveNumber()
         {
             //Arrange
-            CustomList<int> ourList = new CustomList<int>;
+            CustomList<int> ourList = new CustomList<int>();
             int expected = 6;
             int actual;
 
@@ -46,7 +46,7 @@ namespace CustomListUnitTest
         public void AddNumber_PositiveNumberinListCount_ReturnPositiveNumber()
         {
             //Arrange
-            CustomList<int> ourList = new CustomList<int>;
+            CustomList<int> ourList = new CustomList<int>();
             int expected = 3;
             int actual;
 
@@ -65,7 +65,7 @@ namespace CustomListUnitTest
         public void AddNumber_TestLastIndex_ReturnPositiveNumber()
         {
             //Arrange
-            CustomList<int> ourList = new CustomList<int>;
+            CustomList<int> ourList = new CustomList<int>();
             int expected = 12;
             int actual;
 
@@ -89,7 +89,7 @@ namespace CustomListUnitTest
         public void AddMethod_PositiveNumnerinListCount_ReturnPositiveNumber()
         {
             //Arrange
-            CustomList<int> ourList = new CustomList<int>;
+            CustomList<int> ourList = new CustomList<int>();
             int expected = 6;
             int actual;
 
