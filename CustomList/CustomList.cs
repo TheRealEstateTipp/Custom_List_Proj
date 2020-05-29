@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,6 +10,31 @@ namespace CustomListProj
     public class CustomList<T>
     {
         private T[] items;
+        public T this[int index]
+        {
+            get
+            {
+                if(index < 0 && index >= items.Length)
+                {
+                    throw new IndexOutOfRangeException("Out of Range");
+                }
+                else
+                {
+                    return items[index];
+                }
+            }
+            set
+            {
+                if(index > 0 && index > items.Length)
+                {
+                    throw new IndexOutOfRangeException("Out of Range");
+                }
+                else
+                {
+                    items[index] = value;
+                }
+            }
+        }
         public int Count;
         public int Capacity;
         public bool isRemoved;
@@ -70,11 +96,8 @@ namespace CustomListProj
                 items = newArray;
             }
 
-            
-
-
-
         }
+       
     }
 
 

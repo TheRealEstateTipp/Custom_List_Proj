@@ -29,7 +29,7 @@ namespace CustomListUnitTest
 
         [TestMethod]
 
-        public void index_string_returnstring()
+        public void Index_String_ReturnString()
         {
             //Arrange
             CustomList<string> newList = new CustomList<string>();
@@ -49,7 +49,7 @@ namespace CustomListUnitTest
 
         [TestMethod]
 
-        public void index_setindexpositivenumber_returnpositivenumber()
+        public void Index_SetIndexPositiveNumber_ReturnPositiveNumber()
         {
             //Arrange
             CustomList<int> newList = new CustomList<int>();
@@ -66,7 +66,7 @@ namespace CustomListUnitTest
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
 
-        public void index_OutofRangeException_ReturnExpectedException()
+        public void Index_OutofRangeException_ReturnExpectedException()
         {
             //Arrange
             CustomList<int> newList = new CustomList<int>();
