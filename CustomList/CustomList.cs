@@ -14,7 +14,7 @@ namespace CustomListProj
         {
             get
             {
-                if(index < 0 && index >= items.Length)
+                if(index < 0 || index >= Count)
                 {
                     throw new IndexOutOfRangeException("Out of Range");
                 }
@@ -25,7 +25,7 @@ namespace CustomListProj
             }
             set
             {
-                if(index > 0 && index > items.Length)
+                if(index < 0 || index >= Count)
                 {
                     throw new IndexOutOfRangeException("Out of Range");
                 }
@@ -38,6 +38,7 @@ namespace CustomListProj
         public int Count;
         public int Capacity;
         public bool isRemoved;
+ 
 
         public CustomList()
         {
