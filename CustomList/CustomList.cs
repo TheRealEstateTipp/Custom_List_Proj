@@ -11,6 +11,7 @@ namespace CustomListProj
         private T[] items;
         public int Count;
         public int Capacity;
+        public bool isRemoved;
 
         public CustomList()
         {
@@ -44,7 +45,38 @@ namespace CustomListProj
             items[Count] = item;
             Count++;
         }
+
+        public void Remove(T itemtoRemove)
+        {
+            //Remove objects from array
+            //Remove the first occurence 
+            //Return true if item is removed
+            //Return false if not removed and not found
+            //Make another copy of the array 
+
+            T[] newArray = new T[Capacity];
+
+            for (int i = 0; i < Count; i++)
+            {
+                if (items[i].Equals(itemtoRemove))
+                {
+                    continue;
+                }
+                else
+                {
+                    newArray[i] = items[i];
+                }
+
+                items = newArray;
+            }
+
+            
+
+
+
+        }
     }
+
 
        
 }
