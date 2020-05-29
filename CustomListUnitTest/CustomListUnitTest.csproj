@@ -52,6 +52,7 @@
     <Compile Include="AddToListUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveMethodUnitTest.cs" />
+    <Compile Include="IndexerUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
