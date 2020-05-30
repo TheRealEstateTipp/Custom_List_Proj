@@ -43,7 +43,14 @@ namespace CustomListProj
                 return count;
             }
         }
-        public int capacity;
+        private int capacity;
+        public int Capacity
+        {
+            get
+            {
+                return capacity;
+            }
+        }
         public bool isRemoved;
  
 
@@ -61,11 +68,11 @@ namespace CustomListProj
             //Increase Capacity if Count is = Capacity
             //Get items copied to new array
 
-            if (Count == capacity)
+            if (Count == Capacity)
             {
-                T[] tempArray = new T[capacity * 2];
+                T[] tempArray = new T[Capacity * 2];
 
-                for (int i = 0; i < capacity; i++)
+                for (int i = 0; i < Capacity; i++)
                 {
                     tempArray[i] = items[i];
                    
@@ -88,7 +95,7 @@ namespace CustomListProj
             //Return false if not removed and not found
             //Make another copy of the array 
 
-            T[] newArray = new T[capacity];
+            T[] newArray = new T[Capacity];
 
             for (int i = 0; i < Count; i++)
             {

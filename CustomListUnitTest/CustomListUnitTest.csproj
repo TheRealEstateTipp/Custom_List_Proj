@@ -54,6 +54,7 @@
     <Compile Include="RemoveMethodUnitTest.cs" />
     <Compile Include="IndexerUnitTest.cs" />
     <Compile Include="CountUnitTest.cs" />
+    <Compile Include="CapacityUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
