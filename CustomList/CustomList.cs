@@ -35,7 +35,14 @@ namespace CustomListProj
                 }
             }
         }
-        public int Count;
+        private int count;
+        public int Count
+        {
+            get
+            {
+                return count;
+            }
+        }
         public int Capacity;
         public bool isRemoved;
  
