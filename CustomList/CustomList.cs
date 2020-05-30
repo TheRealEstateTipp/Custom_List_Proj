@@ -43,15 +43,15 @@ namespace CustomListProj
                 return count;
             }
         }
-        public int Capacity;
+        public int capacity;
         public bool isRemoved;
  
 
         public CustomList()
         {
             items = new T[4];
-            Count = 0;
-            Capacity = 4;
+            count = 0;
+            capacity = 4;
         }
 
         public void Add(T item)
@@ -61,23 +61,23 @@ namespace CustomListProj
             //Increase Capacity if Count is = Capacity
             //Get items copied to new array
 
-            if (Count == Capacity)
+            if (Count == capacity)
             {
-                T[] tempArray = new T[Capacity * 2];
+                T[] tempArray = new T[capacity * 2];
 
-                for (int i = 0; i < Capacity; i++)
+                for (int i = 0; i < capacity; i++)
                 {
                     tempArray[i] = items[i];
                    
                 }
                 
-                Capacity *= 2;
+                capacity *= 2;
 
                 items = tempArray;
             }
 
             items[Count] = item;
-            Count++;
+            count++;
         }
 
         public void Remove(T itemtoRemove)
@@ -88,7 +88,7 @@ namespace CustomListProj
             //Return false if not removed and not found
             //Make another copy of the array 
 
-            T[] newArray = new T[Capacity];
+            T[] newArray = new T[capacity];
 
             for (int i = 0; i < Count; i++)
             {
