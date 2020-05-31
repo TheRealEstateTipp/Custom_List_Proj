@@ -18,62 +18,59 @@ namespace CustomListUnitTest
             //Act
             newList.Add(24);
 
-            //Assert
             Console.WriteLine(newList);
         }
-    }
-    [TestMethod]
-    public void ToString_String_ReturnString()
-    {
-        //Arrange
-        CustomList<string> newList = new CustomList<string>();
+    
+        [TestMethod]
+        public void ToString_String_ReturnString()
+        {
+             //Arrange
+             CustomList<string> newList = new CustomList<string>();
 
 
-        //Act
-        newList.Add("Apples");
+             //Act
+             newList.Add("Apples");
 
-        //Assert
-        Console.WriteLine(newList);
-    }
-    [TestMethod]
-    public void ToString_Double_ReturnDouble()
-    {
-        //Arrange
-        CustomList<double> newList = new CustomList<double>();
+             Console.WriteLine(newList);
+        }
 
+         [TestMethod]
+         public void ToString_Double_ReturnDouble()
+         {
+              //Arrange
+              CustomList<double> newList = new CustomList<double>();
 
-        //Act
-        newList.Add(2.4);
+              //Act
+              newList.Add(2.4);
+              Console.WriteLine(newList);
+         }
 
-        //Assert
-        Console.WriteLine(newList);
-    }
-    [TestMethod]
-    public void ToString_MultipleInt_ReturnMultipleInt()
-    {
-        //Arrange
-        CustomList<int> newList = new CustomList<int>();
+         [TestMethod]
+         public void ToString_MultipleInt_ReturnMultipleInt()
+         {
+             //Arrange
+             CustomList<int> newList = new CustomList<int>();
+ 
+             //Act
+             newList.Add(2);
+             newList.Add(4);
 
+             Console.WriteLine(newList);
+         }
 
-        //Act
-        newList.Add(2);
-        newList.Add(4);
-
-        //Assert
-        Console.WriteLine(newList);
-    }
-    [TestMethod]
-    public void ToString_MultipleString_ReturnMultipleString()
-    {
-        //Arrange
-        CustomList<int> newList = new CustomList<int>();
+        [TestMethod]
+        public void ToString_MultipleString_ReturnMultipleString()
+        {
+            //Arrange
+            CustomList<string> newList = new CustomList<string>();
 
 
-        //Act
-        newList.Add("Apple");
-        newList.Add("Banana");
+            //Act
+            newList.Add("Apple");
+            newList.Add("Banana");
 
-        //Assert
-        Console.WriteLine(newList);
+            Console.WriteLine(newList);
+        }
+     
     }
 }

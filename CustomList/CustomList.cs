@@ -116,7 +116,11 @@ namespace CustomListProj
             }
 
         }
-       
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+
     }
 
 
