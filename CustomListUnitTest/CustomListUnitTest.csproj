@@ -55,6 +55,7 @@
     <Compile Include="IndexerUnitTest.cs" />
     <Compile Include="CountUnitTest.cs" />
     <Compile Include="CapacityUnitTest.cs" />
+    <Compile Include="ToStringOverrideUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

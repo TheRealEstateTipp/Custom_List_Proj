@@ -50,6 +50,10 @@ namespace CustomListProj
             {
                 return capacity;
             }
+            set
+            {
+                capacity = value;
+            }
         }
         public bool isRemoved;
  
@@ -78,7 +82,7 @@ namespace CustomListProj
                    
                 }
                 
-                capacity *= 2;
+                Capacity *= 2;
 
                 items = tempArray;
             }
